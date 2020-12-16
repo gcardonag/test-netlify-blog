@@ -2,11 +2,15 @@ FROM node:lts-slim
 
 WORKDIR /usr/src/app
 
-# COPY package*.json ./
+COPY blog/package*.json ./blog/
 
-# RUN yarn install
+WORKDIR /usr/src/app/blog
 
-# COPY . .
+RUN npm i
+
+WORKDIR /usr/src/app
+
+COPY . .
 
 # EXPOSE 8080
 

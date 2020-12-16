@@ -14,11 +14,12 @@ services:
     - "3000:3000"
     stdin_open: true
     entrypoint: /bin/bash
-    volumes:
-    - ".:/usr/src/app"
+    # volumes:
+    # - ".:/usr/src/app"
   prod_build:
     build: .
-    entrypoint: bash -c "cd blog && npm run build"
+    # entrypoint: bash -c "cd blog && npm run build"
+    entrypoint: /bin/bash
     environment: 
       CI: "false"
     volumes:

@@ -6,7 +6,7 @@ COPY blog/package*.json ./blog/
 
 WORKDIR /usr/src/app/blog
 
-RUN npm i
+RUN yarn install
 
 WORKDIR /usr/src/app
 

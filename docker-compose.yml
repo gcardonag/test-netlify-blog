@@ -4,14 +4,14 @@ services:
     build: .
     stdin_open: true
     ports:
-    - "3000:3000"
-    entrypoint: bash -c "yarn install && yarn start"
+    - "8000:8000"
+    entrypoint: bash -c "cd blog && yarn install && yarn develop"
     volumes:
     - ".:/usr/src/app"
   bash:
     build: .
     ports:
-    - "3000:3000"
+    - "8000:8000"
     stdin_open: true
     entrypoint: /bin/bash
     volumes:

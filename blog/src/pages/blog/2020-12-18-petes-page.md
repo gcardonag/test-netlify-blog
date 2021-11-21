@@ -4,7 +4,7 @@ title: Pete's Page
 date: 2020-12-18T15:22:39.076Z
 description: Just a sample of my musings.
 featuredpost: true
-featuredimage: /img/wissahickon.jfif
+featuredimage: /img/wissahickon.jpg
 tags:
   - tswizzle
 ---

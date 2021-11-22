@@ -18,7 +18,7 @@ services:
     - ".:/usr/src/app"
   prod_build:
     build: .
-    entrypoint: bash -c "cd blog && yarn build && cp -R public/ /tmp/public/"
+    entrypoint: bash -c "cd blog && yarn build && cp -R public/* /tmp/public/"
     environment: 
       CI: "false"
     volumes:
